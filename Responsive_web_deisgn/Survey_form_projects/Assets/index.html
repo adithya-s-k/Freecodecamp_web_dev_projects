@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="container">
+        <header class="header">
+            <h1 id="title" class="text-center">School Admission Form</h1>
+            <p id="description" class="description text-center">
+              Apply tp our prestigious school using the form given below
+            </p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name"> 
+                    Name
+                </label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Please Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email"> 
+                    Email
+                </label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Please Enter your Email ID" required>
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number"> 
+                    Age Of Child<span class="optional">(Optional)</span>
+                </label>
+                <input type="number" name="age" id="number" min="2" max="10" class="form-control" placeholder="Please Enter your Age of child" optional>
+            </div>
+            <div class="form-group">
+                <p>Which of the following standards are you applying for</p>
+                <select id="dropdown" name="standard" class="form-control" required>
+                    <option disabled selected value>Select a standard</option>
+                    <option value="Play-care">Play Care</option>
+                    <option value="Pre-KG">Pre-KG</option>
+                    <option value="LKG">LKG</option>
+                    <option value="UKG">UKG</option>
+                    <option value="Day-care">Day Care</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>How many times is your kid vaccinated</p>
+                <label><input type="radio" value="Not-vaccinated" name="vaccine" class="input-radio">Not Vaccinated</label>
+                <label><input type="radio" value="Vaccinated-1" name="vaccine" class="input-radio">Vaccinated once</label>
+                <label><input type="radio" value="Vaccinated-2" name="vaccine" class="input-radio" checked>Vaccinated twice</label>
+            </div>
+            <div class="form-group">
+                <p>How did you find out about our school</p>
+                <select id="dropdown" name="standard" class="form-control" optional>
+                    <option disabled selected value>Select a option</option>
+                    <option value="Social-Media">Social Media</option>
+                    <option value="Advertisments">Advertisments</option>
+                    <option value="Newspaper">Newspaper</option>
+                    <option value="Friends-Family">Friends and Family</option>
+                    <option value="Television">Television</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Please select a prefered school timings<span class="optional">(You can select multiple prefered timings)</span></p>
+                <label><input value="slot1" type="checkbox" name="timings" class="input-checkbox">8:00 AM to 11:00 AM</label>
+                <label><input value="slot2" type="checkbox" name="timings" class="input-checkbox">9:00 AM to 12:00 PM</label>
+                <label><input value="slot3" type="checkbox" name="timings" class="input-checkbox">10:00 AM to 1:00 PM</label>
+                <label><input value="slot4" type="checkbox" name="timings" class="input-checkbox">11:00 AM to 2:00 PM</label>
+                <label><input value="slot5" type="checkbox" name="timings" class="input-checkbox">12:00 AM to 3:00 PM</label>
+            </div>
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea
+                  id="comments"
+                  class="input-textarea"
+                  name="comment"
+                  placeholder="Enter your comment here..."
+                ></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
