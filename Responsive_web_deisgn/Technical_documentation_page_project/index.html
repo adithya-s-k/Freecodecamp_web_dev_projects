@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Documentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>Python Documentation</header>
+        <ul>
+            <li><a  class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a  class="nav-link" href="#Get_Started">Get Started</a></li>
+            <li><a  class="nav-link" href="#Syntax">Syntax</a></li>
+            <li><a  class="nav-link" href="#Comments">Comments</a></li>
+            <li><a  class="nav-link" href="#Variables">Variables</a></li>
+                
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section id="Introduction" class="main-section">
+            <header>
+                <h2>Introduction</h2>
+            </header>
+                <article>
+                    <h4>What is Python</h4>
+                    <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.</p>
+                    <p>It is used for:</p>
+                    <ul>
+                        <li>web development (server-side)</li>
+                        <li>software development</li>
+                        <li>mathematics</li>
+                        <li>system scripting</li>
+                    </ul>
+                    <h4>What can Python do?</h4>
+                    <ul>
+                        <li>Python can be used on a server to create web applications.</li>
+                        <li>Python can be used alongside software to create workflows.</li>
+                        <li>Python can connect to database systems. It can also read and modify files.</li>
+                        <li>Python can be used to handle big data and perform complex mathematics.</li>
+                        <li>Python can be used for rapid prototyping, or for production-ready software development</li>
+                    </ul>
+                </article>
+        </section>
+        <section id="Get_Started" class="main-section">
+            <header>
+                <h2>Get Started</h2>
+            </header>
+                <article>
+                    <h4>Installation</h4>
+                    <p>Many PCs and Macs will have python already installed.
+                    To check if you have python installed on a Windows PC, search in the start bar for Python or run the following on the Command Line (cmd.exe):
+                    </p>
+                    <code>C:\Users\Your Name>python --version</code>
+                    <p>To check if you have python installed on a Linux or Mac, then on linux open the command line or on Mac open the Terminal and type:
+                    </p>
+                    <code>python --version</code>
+                    <p>If you find that you do not have Python installed on your computer, then you can download it for free from the following website: https://www.python.org/</p>
+                    <h4>Quick Start</h4>
+                    <p>Python is an interpreted programming language, this means that as a developer you write Python (.py) files in a text editor and then put those files into the python interpreter to be executed.
+                        The way to run a python file is like this on the command line:</p>
+                    <code>C:\Users\Your Name>python helloworld.py</code>
+                    <p>Where "helloworld.py" is the name of your python file.
+                    Let's write our first Python file, called helloworld.py, which can be done in any text editor.</p>
+                    <code>print("Hello, World!")</code>
+                </article>
+        </section>
+        <section id="Syntax" class="main-section">
+            <header>
+                <h2>Syntax</h2>
+            </header>
+            <article>
+                <h4>Indentation</h4>
+                    <p>Indentation refers to the spaces at the beginning of a code line.
+                        Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important.
+                        Python uses indentation to indicate a block of code.</p>
+                    <code>if 5 > 2:</code>
+                        print("Five is greater than two!")</code>
+                    <p>Python will give you an error if you skip the indentation:</p>
+                    <code>
+                        if 5 > 2:
+                        print("Five is greater than two!")
+                    </code>
+            </article>
+        </section>
+        <section id="Comments" class="main-section">
+            <header>
+                <h2>Comments</h2>
+            </header>
+            <article>
+                <h4>Creating a comment</h4>
+                <p>Comments can be used to explain Python code. <br>
+                    Comments can be used to make the code more readable. <br>
+                    Comments can be used to prevent execution when testing code.</p>
+                <p>Comments starts with a #, and Python will ignore them:</p><br>
+                <code>#This is a comment <br> print("Hello, World!") <br></code><br>
+                <code>print("Hello, World!") #This is a comment <br></code><br>
+                <code>#print("Hello, World!") <br>
+                    print("Cheers, Mate!")</code>
+                <h4>Multi Line Comments</h4>
+                <p>Since Python will ignore string literals that are not assigned to a variable, you can add a multiline string (triple quotes) in your code, and place your comment inside it:
+                    Example</p>
+                <code>"""
+                    This is a comment
+                    written in
+                    more than just one line
+                    """<br>
+                    print("Hello, World!")</code>
+            </article>
+        </section>
+        <section id="Variables" class="main-section">
+            <header>
+                <h2>Variables</h2>
+            </header>
+            <article>
+                <h4>Creating Variables</h4>
+                <p>Python has no command for declaring a variable.
+                A variable is created the moment you first assign a value to it.</p>
+                <code>x = 5 <br>
+                    y = "John" <br>
+                    print(x) <br>
+                    print(y) <br></code>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
